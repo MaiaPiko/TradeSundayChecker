@@ -1,9 +1,9 @@
 const weekdays = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
 
 
-const date = new Date(2023, 4, 25);
 
-// const date = new Date();
+
+const date = new Date();
 const dayOfWeek = date.getDay()
 
 function currentDate() {
