@@ -1,0 +1,127 @@
+
+:root {
+  --hacker-green:#20C20E ;
+  --nie-color:  rgb(14, 36, 96);
+  --tak-color: rgb(7, 111, 5);
+  --red-button: rgb(226, 25, 25);
+  --red-button-hover: rgb(255, 0, 0);
+
+
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+
+.card {
+  padding: 2em;
+}
+
+
+.red-button {
+  background-color: var(--red-button);
+  width: 500px;
+  height: 500px;
+  
+  &:hover{
+    background-color: var(--red-button-hover) !important;
+    border: rgb(156, 2, 2);
+  }
+}
+
+.tak {
+  background-color: var(--tak-color);
+  width: 500px;
+  height: 500px;
+  &:hover{
+    background-color:#337f0a !important;
+  }
+}
+
+.nie {
+  background-color: var(--nie-color);
+  width: 500px;
+  height: 500px;
+  &:hover{
+    background-color:#0a2f7f !important;
+  }
+
+}
+
+
+.hacker-green{
+  color: var(--hacker-green);
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+@media (max-width: 768px) {
+  /* styles for screens smaller than 768px */
+  .red-button, .nie, .tak {
+    width: 400px;
+    height: 400px;
+    /* aspect-ratio: 1/0.45; */
+    border-radius: 50%;
+    /* border-left: 10%;
+    border-right: 10%; */
+ 
+  }
+  button > h1 {
+    font-size: large;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+  /* styles for screens smaller than 768px */
+  .red-button, .nie, .tak {
+    width: 200px;
+    height: 200px;
+    /* aspect-ratio: 1/0.45; */
+    border-radius: 50%;
+    /* border-left: 10%;
+    border-right: 10%; */
+ 
+  }
+  button > h1 {
+    font-size: large;
+  }
+
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 350px) {
+  /* styles for screens smaller than 768px */
+  .red-button, .nie, .tak {
+    width: 200px;
+    height: 200px;
+    /* aspect-ratio: 1/0.45; */
+    border-radius: 50%;
+    /* border-left: 10%;
+    border-right: 10%; */
+ 
+  }
+
+
+}
