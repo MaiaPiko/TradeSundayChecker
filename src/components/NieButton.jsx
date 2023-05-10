@@ -1,5 +1,7 @@
-import {Button, Typography} from 'antd';
+import { Button } from 'antd';
 import "../App.css"
+import 'antd/dist/reset.css';
+
 
 
 

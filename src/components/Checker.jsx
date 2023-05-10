@@ -1,10 +1,12 @@
 import { currentDate, nextSunday, nextSundayStr, isItSunday } from "../logic/date";
-import {Button, Typography} from 'antd';
+import { Button } from 'antd';
 import isTradeSunday from "../logic/isTradeSunday";
 import { useState } from 'react'
 import "../App.css"
 import NieButton from "./NieButton";
 import TakButton from "./TakButton";
+import 'antd/dist/reset.css';
+
 
 function Checker(){
     const [isShown, setIsShown] = useState(false);
