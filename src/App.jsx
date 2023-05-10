@@ -3,6 +3,7 @@ import Checker from './components/Checker';
 import { Layout } from 'antd';
 const { Header } = Layout;
 import { currentDate } from './logic/date';
+import 'antd/dist/antd.css';
 
 
 
