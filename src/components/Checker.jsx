@@ -43,7 +43,7 @@ function Checker() {
               <>
                 {isTradeSunday(nextSunday()) ? (
                   <>
-                    <p>Nadchodząca niedziela:<span className="hacker-green"> {nextSundayStr()}</span> jest niedziela handlowa.</p>
+                    <p>Nadchodząca niedziela:<span className="hacker-green"> {nextSundayStr()}</span> jest niedzielą handlową.</p>
                   </>
                 ) : (
                   <>
@@ -56,11 +56,11 @@ function Checker() {
                 {isTradeSunday(nextSunday()) ?
                   (
                     <>
-                      <p><span className="hacker-green"> {nextSundayStr()}</span> jest niedziela handlowa.</p>
+                      <p>Dziś<span className="hacker-green"> {nextSundayStr()}</span> jest niedziela handlowa.</p>
                     </>
                   ) : (
                     <>
-                      <p><span className="hacker-green"> {nextSundayStr()} </span>nie jest niedzielą handlową.</p>
+                      <p>Dziś<span className="hacker-green"> {nextSundayStr()} </span>nie ma niedzieli handlowej.</p>
                     </>
                   )
                 }
@@ -71,6 +71,7 @@ function Checker() {
       )}
     </div>
   )
+
 }
 
 export default Checker;

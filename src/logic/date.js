@@ -3,8 +3,8 @@ const weekdays = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", 
 
 
 
-const date = new Date();
-// const date = new Date(2023, 5, 25)
+// const date = new Date();
+const date = new Date(2023, 7, 11)
 const dayOfWeek = date.getDay()
 
 function currentDate() {
@@ -21,7 +21,8 @@ function currentDate() {
 function nextSunday(){
     const daysRemaining = (7 - dayOfWeek) % 7;
     const nextSunday = new Date(date);
-
+    nextSunday.setDate(date.getDate() + daysRemaining);
+    console.log(nextSunday)
     return nextSunday
 }
 
@@ -48,3 +49,5 @@ function nextSundayStr() {
   
   
   export { currentDate, nextSundayStr, nextSunday, isItSunday };
+
+
