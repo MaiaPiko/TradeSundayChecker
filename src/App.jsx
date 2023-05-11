@@ -1,7 +1,7 @@
 import './App.css'
 import Checker from './components/Checker';
 import { currentDate } from './logic/date';
-
+import 'antd/dist/reset.css';
 
 
 
