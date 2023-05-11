@@ -10,9 +10,11 @@ function App() {
 
   return (
     <>
+    <div className='background'>
 <p style={{ display: 'flex', justifyContent: 'flex-start' }}>Dzisiaj jest:<span className='hacker-green' style={{ marginLeft: '0.5rem' }}>{currentDate()}</span></p>
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
    <Checker/>
+   </div>
    </div>
    </>
   )

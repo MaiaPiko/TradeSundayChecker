@@ -20,8 +20,11 @@
 
 
 
+
+
 .card {
   padding: 2em;
+  
 }
 
 
@@ -29,10 +32,24 @@
   background-color: var(--red-button);
   width: 500px;
   height: 500px;
+  outline: none;
+  border: transparent !important;
+  box-shadow: -3px 15px 50px 20px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom, #e01e09, #8b140c); /* Add gradient */
   
   &:hover{
     background-color: var(--red-button-hover) !important;
-    border: rgb(156, 2, 2);
+   outline: none;
+   border: transparent !important;
+
+   &:focus{
+    outline: none;
+  &:active{
+    outline:none !important;
+    border: none !important;
+  }
+   }
+
   }
 }
 
@@ -40,8 +57,14 @@
   background-color: var(--tak-color);
   width: 500px;
   height: 500px;
+  background-image: linear-gradient(45deg, #23c233, #1d6208); /* Add gradient */
+  box-shadow: -3px 15px 50px 20px rgba(0, 0, 0, 0.5);
+
+
+
   &:hover{
-    background-color:#337f0a !important;
+    background-color:#2c7107 !important;
+    outline: none !important;
   }
 }
 
@@ -49,8 +72,15 @@
   background-color: var(--nie-color);
   width: 500px;
   height: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  box-shadow: -3px 15px 50px 20px rgba(0, 0, 0, 0.5);
+
+  background-image: linear-gradient(46deg, #2325c2, #0f0989); 
+
   &:hover{
     background-color:#0a2f7f !important;
+    outline: none !important;
+    border:#0a2f7f;
   }
 
 }
@@ -73,15 +103,26 @@ h1 {
   .red-button, .nie, .tak {
     width: 400px;
     height: 400px;
-    /* aspect-ratio: 1/0.45; */
-    border-radius: 50%;
-    /* border-left: 10%;
-    border-right: 10%; */
+
+    /* border-radius: 50%; */
+   
  
   }
   button > h1 {
     font-size: large;
   }
+
+}
+
+
+
+
+
+button:active,
+button:hover,
+button:focus{
+  outline-style:none !important;
+  outline: 0 !important;
 
 }
 
@@ -104,12 +145,26 @@ h1 {
 }
 
 
+button:focus {
+  outline: none;
+}
+
+
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  outline: none;
 }
+
+
+/* .background {
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;} */
+
 
 @media (max-width: 350px) {
   /* styles for screens smaller than 768px */
