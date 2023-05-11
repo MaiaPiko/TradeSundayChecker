@@ -1,5 +1,4 @@
 import { currentDate, nextSunday, nextSundayStr, isItSunday } from "../logic/date";
-import { Button } from 'antd';
 import { useState } from 'react';
 import "../App.css";
 import isTradeSunday from "../logic/isTradeSunday";
@@ -17,10 +16,11 @@ function Checker() {
     onClick: handleClick,
     type: 'primary',
     shape: 'circle',
+    
 
     className: isShown ? isTradeSunday(nextSunday()) ? 'tak' : 'nie' : 'red-button',
     children: !isShown ? (
-      <h1>Czy w tym tygodniu <br /> jest niedziela <br /> handlowa?</h1>
+      <h1><br/>Czy w tym tygodniu <br /> jest niedziela <br /> handlowa?</h1>
     ) : (
       isTradeSunday(nextSunday()) ? <h1>Tak!</h1> : <h1>Nie!</h1>
     )
@@ -29,7 +29,7 @@ function Checker() {
   return (
     <div className="container" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <div className="button-container">
-        <Button {...buttonProps} />
+        <button {...buttonProps} />
       </div>
       {!isShown && (
         <div className="card">
@@ -48,7 +48,7 @@ function Checker() {
                   </>
                 ) : (
                   <>
-                    <p>Nadchodząca niedziela:<span className="hacker-green"> {nextSundayStr()} </span>nie jest niedziela handlowa.</p>
+                    <p>Nadchodząca niedziela:<span className="hacker-green"> {nextSundayStr()} </span>nie jest niedzielą handlową.</p>
                   </>
                 )}
               </>
