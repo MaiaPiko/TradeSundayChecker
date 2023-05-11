@@ -2,7 +2,6 @@ import { currentDate, nextSunday, nextSundayStr, isItSunday } from "../logic/dat
 import { useState } from 'react';
 import "../App.css";
 import isTradeSunday from "../logic/isTradeSunday";
-import 'antd/dist/reset.css';
 
 function Checker() {
   const [isShown, setIsShown] = useState(false);
