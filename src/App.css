@@ -138,6 +138,7 @@ button:hover,
 button:focus{
   outline-style:none !important;
   outline: 0 !important;
+  cursor: pointer;
 
 }
 
