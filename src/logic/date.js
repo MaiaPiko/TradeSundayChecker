@@ -3,8 +3,8 @@ const weekdays = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", 
 
 
 
-// const date = new Date();
-const date = new Date(2023, 7, 11)
+const date = new Date();
+// const date = new Date(2023, 7, 11)
 const dayOfWeek = date.getDay()
 
 function currentDate() {
