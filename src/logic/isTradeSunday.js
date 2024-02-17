@@ -3,23 +3,17 @@ function isTradeSunday(date) {
   const day = date.getDate();
   const year = date.getFullYear();
     
-  const sundayBeforeChristmas = new Date(year, 11, 24).getTime();
-  const sundayTwoBeforeChristmas = new Date(year, 11, 17).getTime();
-  const oneSundayBeforeEaster = new Date(year, 3, 2).getTime();
-  const lastSundayOfJanuary = new Date(year, 0, 31 - new Date(year, 0, 31).getDay()).getTime();
-  const lastSundayOfApril = new Date(year, 3, 30 - new Date(year, 3, 30).getDay()).getTime();
-  const lastSundayOfJune = new Date(year, 5, 30 - new Date(year, 5, 30).getDay()).getTime();
-  const lastSundayOfAugust = new Date(year, 7, 31 - new Date(year, 7, 31).getDay()).getTime();
-    
-  return (
-    (date.getTime() === sundayBeforeChristmas) ||
-    (date.getTime() === sundayTwoBeforeChristmas) ||
-    (date.getTime() === oneSundayBeforeEaster) ||
-    (date.getTime() === lastSundayOfJanuary) ||
-    (date.getTime() === lastSundayOfApril) ||
-    (date.getTime() === lastSundayOfJune) ||
-    (date.getTime() === lastSundayOfAugust)
-  );
+  const tradeSundays2024 = [
+    new Date(2024, 0, 28).getTime(),
+    new Date(2024, 2, 24).getTime(),
+    new Date(2024, 3, 28).getTime(),
+    new Date(2024, 5, 30).getTime(),
+    new Date(2024, 7, 25).getTime(),
+    new Date(2024, 11, 15).getTime(),
+    new Date(2024, 11, 22).getTime()
+  ];
+  
+  return tradeSundays2024.includes(date.getTime());
 }
 
 export default isTradeSunday;
